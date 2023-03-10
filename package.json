@@ -33,6 +33,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "gulp": "^4.0.2",
-    "gulp-pug": "^5.0.0"
+    "gulp-pug": "^5.0.0",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
