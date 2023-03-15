@@ -1,11 +1,26 @@
-// Import custom variables 
+// Bootstrap functions
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Custom variables 
 @import "variables";
 
-// Import bootstrap functions, variables, maps and utilities
-@import "../../node_modules/bootstrap/scss/functions";
+// Bootstrap variables, maps and utilities
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/utilities";
 
 // Bootstrap main import
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom mixins
+@import "mixins";
+
+// Custom comonents
+@import "./components/avatar";
+@import "./components/contact";
+
+// Custom utilities
+@import "./utilities/hide-scrollbar";
+
+// Custom settings
+@import "general";
