@@ -18,4 +18,7 @@ const buildPug = () => {
     .pipe(dest('build/'));
 };
 
-exports.build = parallel(buildSass, buildPug);
+const importBootstrapBundleJS = () => src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+  .pipe(dest('build/js/'));
+
+exports.build = parallel(buildSass, buildPug, importBootstrapBundleJS);
