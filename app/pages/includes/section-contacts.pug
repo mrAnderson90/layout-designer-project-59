@@ -1,6 +1,6 @@
--
-	const sectionName = 'Контакты';
-	const sectionPlaceholder = 'Поиск по контактам';
-
-+left-side
+section.tab-pane.pt-5.px-4.active(role='tabpanel' aria-labelledby='contacts-tab' id='contacts' tabindex='0')
+	h1.mb-4.mb-md-5 Контакты
+	form(action='#')
+		lable
+			input(type='search' placeholder='Поиск по контактам')
 	include components/contact-list.pug

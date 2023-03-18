@@ -1,0 +1,11 @@
+nav
+	.navbar.navbar-dark.navbar-expand.bg-primary
+		.container-fluid
+			a.navbar-brand(href='#')
+				img(src='../app/images/icons/logo.svg' alt='hexlet-logo').logo
+			.navbar-collapse.collapse
+				ul.navbar-nav(role='tablist')
+					li.nav-item
+						a(data-bs-toggle='tab' data-bs-target='#contacts' role='tab' type='button' aria-controls='contacts' aria-selected='true').nav-link.active Контакты
+					li.nav-item
+						a(data-bs-toggle='tab' data-bs-target='#chats' role='tab' type='button' aria-controls='chats' aria-selected='false').nav-link Сообщения

@@ -1,6 +1,5 @@
--
-	const sectionName = 'Чаты';
-	const sectionPlaceholder = 'Поиск по сообщениям';
-
-+left-side
-	include components/contact-list.pug
+section.tab-pane.pt-5.px-4(role='tabpanel' aria-labelledby='chats-tab' id='chats' tabindex='0')
+		h1.mb-4.mb-md-5 Чаты
+		form(action='#')
+			lable
+				input(type='search' placeholder='Поиск по сообщениям')
