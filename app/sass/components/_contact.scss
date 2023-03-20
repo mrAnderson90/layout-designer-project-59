@@ -3,32 +3,48 @@
   align-items: center;
   column-gap: 1.5rem;
   padding: 1rem;
-	color: $gray-900;
+	padding-right: 1.5rem;
+  color: $gray-900;
   text-decoration: none;
 
-	&-title {
-		overflow-x: hidden;
-	}
+  &-title {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) auto;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    overflow-x: hidden;
+  }
 
-	&-name {
-		font-weight: 700;
-	}
-
-	&-status {
-		font-size: 0.8rem;
-		color: $gray-600;
-		overflow: hidden;
+  &-name {
+		grid-column: 1 / 7;
+    font-weight: 700;
 		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
+  }
 
-	&:hover,
-	&:focus {
-		color: $light;
-		background-color: $primary;
+  &-time {
+		grid-column: 7 / 8;
+    font-size: 0.8rem;
+    color: #6c757d;
+    opacity: 0.5;
+  }
 
-		& .contact-status {
-			color: $gray;
-		}
-	}
+  &-status {
+    grid-column: 1 / -1;
+    font-size: 0.8rem;
+    color: $gray-600;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &:hover,
+  &:focus {
+    color: $light;
+    background-color: $primary;
+
+    & .contact-status {
+      color: $gray;
+    }
+  }
 }
