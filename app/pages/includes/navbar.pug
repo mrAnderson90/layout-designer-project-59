@@ -1,11 +1,17 @@
 nav.order-last.order-md-first
-	.navbar.navbar-dark.navbar-expand.bg-primary
-		.container-fluid
-			a.navbar-brand(href='#')
-				img(src='../app/images/icons/logo.svg' alt='hexlet-logo').logo
-			.navbar-collapse.collapse
-				ul.navbar-nav(role='tablist')
-					li.nav-item
-						a(data-bs-toggle='tab' data-bs-target='#contacts' role='tab' type='button' aria-controls='contacts' aria-selected='true').nav-link.active Контакты
-					li.nav-item
-						a(data-bs-toggle='tab' data-bs-target='#chats' role='tab' type='button' aria-controls='chats' aria-selected='false').nav-link Сообщения
+	.navbar.navbar-dark.navbar-expand.bg-primary.px-3
+		a.navbar-brand(href='#')
+			img(src='../app/images/icons/logo.svg' alt='hexlet-logo').logo
+		ul.navbar-nav.small.w-100.justify-content-end.justify-content-md-between(role='tablist')
+			li.nav-item
+				a(data-bs-toggle='tab' data-bs-target='#contacts' role='tab' type='button' aria-controls='contacts' aria-selected='true').nav-link.active.d-flex.gap-1
+					img(src='../app/images/icons/people.svg' alt='contacts').nav-icon
+					span.d-none.d-sm-block Контакты
+			li.nav-item
+				a(data-bs-toggle='tab' data-bs-target='#chats' role='tab' type='button' aria-controls='chats' aria-selected='false').nav-link.d-flex.gap-1
+					img(src='../app/images/icons/chat.svg' alt='chats').nav-icon
+					span.d-none.d-sm-block Сообщения
+			li.nav-item
+				a(data-bs-toggle='tab' data-bs-target='#' role='tab' type='button' aria-controls='' aria-selected='false').nav-link.d-flex.gap-1
+					img(src='../app/images/icons/person.svg' alt='profile').nav-icon
+					span.d-none.d-sm-block Профиль
