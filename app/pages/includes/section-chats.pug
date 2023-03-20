@@ -1,5 +1,6 @@
 section.tab-pane.pt-5.px-4(role='tabpanel' aria-labelledby='chats-tab' id='chats' tabindex='0')
 		h1.mb-4.mb-md-5 Чаты
-		form(action='#')
+		form(action='#').mb-5
 			lable
 				input(type='search' placeholder='Поиск по сообщениям')
+		include components/message-list.pug

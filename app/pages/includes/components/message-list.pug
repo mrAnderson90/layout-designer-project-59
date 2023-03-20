@@ -1,0 +1,33 @@
+-
+	var chats = {
+		"В": [{
+			name: "Вениамин Редакторович",
+			status: "Онлайн",
+			avatar: "../app/images/avatar_4.jpg",
+			time: "11:45",
+			message: "O_o"
+		}],
+
+		"Д": [{
+			name: "Джедай Падаванов",
+			status: "Был онлайн вчера",
+			avatar: "../app/images/avatar_2.jpg",
+			time: "10:12",
+			message: "Привет, скоро третий проект? Уже скоро надо будет выложить"
+		}],
+
+		"A": [{
+			name: "Алексей Примадонин",
+			status: "Онлайн",
+			avatar: "../app/images/avatar_3.jpg",
+			time: "08:53",
+			message: "Тесты упали >_<"
+		}],
+	};
+
+ul.list-group
+	each users, category in chats
+		each user in users
+			if user.time
+				li.list-group-item.p-0.border-0.mb-3
+					include message-preview.pug
