@@ -1,5 +1,7 @@
 section.tab-pane.pt-5.px-4(role='tabpanel' aria-labelledby='profile-tab' id='profile' tabindex='0')
-		h1.mb-4.mb-md-5 Профиль
-		form(action='#').mb-5
-			lable.visually-hidden(for='searching-profile') Поиск по сообщениям
-			input(id='searching-profile' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-bottom
+	h1.mb-4.mb-md-5 Профиль
+	form(action='#').mb-5
+		lable.visually-hidden(for='searching-profile') Поиск по сообщениям
+		input(id='searching-profile' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-bottom
+	include ./components/profile-card.pug
+	include ./components/profile-info.pug
