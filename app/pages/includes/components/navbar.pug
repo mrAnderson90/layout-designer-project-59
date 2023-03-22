@@ -3,6 +3,10 @@ nav.order-last.order-md-first
 		a.navbar-brand(href='#')
 			img(src='../app/images/icons/logo.svg' alt='hexlet-logo').logo
 		ul.navbar-nav.small.w-100.justify-content-end.justify-content-md-between(role='tablist')
+			if chat
+				li.nav-item.d-md-none
+					a(data-bs-toggle='tab' data-bs-target='#current-chat' role='tab' type='button' aria-controls='current-chat' aria-selected='false').nav-link.d-flex.gap-1
+						img(src='../app/images/icons/chat-left-text.svg' alt='messager').nav-icon
 			li.nav-item
 				a(data-bs-toggle='tab' data-bs-target='#contacts' role='tab' type='button' aria-controls='contacts' aria-selected='true').nav-link.active.d-flex.gap-1
 					img(src='../app/images/icons/people.svg' alt='contacts').nav-icon
