@@ -1,2 +1,14 @@
-section.tab-pane.pt-5.px-4(role='tabpanel' aria-labelledby='current-chat-tab' id='current-chat' tabindex='0')
-	
+-
+	const currentContact = {
+		name: 'Вениамин Редакторович',
+		status: 'Онлайн',
+		avatar: '../app/images/avatar_4.jpg',
+	}
+
+section.tab-pane(role='tabpanel' aria-labelledby='current-chat-tab' id='current-chat' tabindex='0')
+	.sticky-top
+		a(href='#').contact
+			img(src=currentContact.avatar alt='avatar').avatar.avatar-sm
+			.contact-title
+				.contact-name= currentContact.name
+				.contact-status= currentContact.status

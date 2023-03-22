@@ -3,7 +3,7 @@
   align-items: center;
   column-gap: 1.5rem;
   padding: 1rem;
-	padding-right: 1.5rem;
+  padding-right: 1.5rem;
   color: $gray-900;
   text-decoration: none;
 
@@ -17,13 +17,13 @@
   }
 
   &-name {
-		grid-column: 1 / 7;
+    grid-column: 1 / 7;
     font-weight: 700;
-		white-space: nowrap;
+    white-space: nowrap;
   }
 
   &-time {
-		grid-column: 7 / 8;
+    grid-column: 7 / 8;
     font-size: 0.8rem;
     color: #6c757d;
     opacity: 0.5;
@@ -38,13 +38,15 @@
     text-overflow: ellipsis;
   }
 
-  &:hover,
-  &:focus {
-    color: $light;
-    background-color: $primary;
+  &-card {
+    &:hover,
+    &:focus {
+      color: $light;
+      background-color: $primary;
 
-    & .contact-status {
-      color: $gray;
+      & .contact-status {
+        color: $gray;
+      }
     }
   }
 }
