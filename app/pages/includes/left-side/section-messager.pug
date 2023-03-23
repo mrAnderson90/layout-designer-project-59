@@ -5,10 +5,18 @@
 		avatar: '../app/images/avatar_4.jpg',
 	}
 
-section.tab-pane(role='tabpanel' aria-labelledby='current-chat-tab' id='current-chat' tabindex='0')
-	.sticky-top
+section.tab-pane.h-100(role='tabpanel' aria-labelledby='current-chat-tab' id='current-chat' tabindex='0')
+	.sticky-top.border-bottom.bg-white
 		a(href='#').contact
 			img(src=currentContact.avatar alt='avatar').avatar.avatar-sm
 			.contact-title
 				.contact-name= currentContact.name
 				.contact-status= currentContact.status
+	.row.h-100.hide-scrollbar
+	.row.sticky-bottom.border-top.bg-white
+		form(action='#')
+			.input-group.flex-nowrap
+				input.form-control-plaintext.ps-3(type='text' placeholder='Напишите сообщение...' aria-label='Напишите сообщение')
+				.input-group-text.bg-white.border-0.p-3
+					button.btn.btn-primary.rounded-circle.p-0.send
+						img(src='../app/images/icons/cursor.svg', alt='send')
