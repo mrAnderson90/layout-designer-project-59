@@ -3,7 +3,34 @@
 		name: 'Вениамин Редакторович',
 		status: 'Онлайн',
 		avatar: '../app/images/avatar_4.jpg',
-	}
+	};
+
+	const messages = [
+		{
+			avatar: '',
+			name: '',
+			message: '',
+			timing: '',
+		},
+		{
+			avatar: '',
+			name: '',
+			message: '',
+			timing: '',
+		},
+		{
+			avatar: '',
+			name: '',
+			message: '',
+			timing: '',
+		},
+		{
+			avatar: '',
+			name: '',
+			message: '',
+			timing: '',
+		},
+	];
 
 section.tab-pane.h-100(role='tabpanel' aria-labelledby='current-chat-tab' id='current-chat' tabindex='0')
 	.sticky-top.border-bottom.bg-white
@@ -12,7 +39,22 @@ section.tab-pane.h-100(role='tabpanel' aria-labelledby='current-chat-tab' id='cu
 			.contact-title
 				.contact-name= currentContact.name
 				.contact-status= currentContact.status
-	.row.h-100.hide-scrollbar
+	.h-100.mt-5.mx-5.hide-scrollbar
+		.row.mb-3
+			.col
+				.card.rounded-4.border-0.p-0
+					.card-body.p-4.rounded-4.shadow-sm.bg-light.text-muted
+						.card-title.text-dark.fw-bold.mb-1 Вениамин Редакторович
+						.card-text.mb-2 Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?
+						.card-text.pt-1.border-top
+							small 8 минут назад
+		.row.mb-3
+			.col
+				.card.rounded-4.border-0.p-0
+					.card-body.p-4.rounded-4.shadow-sm.text-bg-primary
+						.card-text.mb-2 Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень
+						.card-text.pt-1.border-top
+							small 5 минут назад
 	.row.sticky-bottom.border-top.bg-white
 		form(action='#')
 			.input-group.flex-nowrap
