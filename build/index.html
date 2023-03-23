@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexlet-Chat | Main | mrAnderson90
+    </title>
+    <link rel="stylesheet" href="./styles/app.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container-xxl h-100 p-0 p-md-4 bg-gray">
+        <div class="row h-100 rounded-0 rounded-md-4 mx-0 bg-white overflow-hidden">
+          <div class="col col-md-7 col-lg-6 col-xl-5 col-xxl-4 h-100 d-flex flex-column p-0 border-0 border-end-md">
+            <nav class="order-last order-md-first navbar navbar-dark navbar-expand bg-primary px-3 py-4"><a class="navbar-brand p-0 d-flex" href="#"><img class="logo" src="../app/images/icons/logo.svg" alt="hexlet-logo"></a>
+              <ul class="navbar-nav small w-100 justify-content-end justify-content-md-evenly gap-5 gap-md-0" role="tablist">
+                <li class="nav-item"><a class="nav-link d-flex p-0 gap-0 gap-md-1" data-bs-toggle="tab" data-bs-target="#contacts" role="tab" type="button" aria-controls="contacts" aria-selected="false"><img class="nav-icon" src="../app/images/icons/people.svg" alt="contacts"><span class="d-none d-sm-block">Контакты</span></a></li>
+                <li class="nav-item"><a class="nav-link d-flex p-0 gap-0 gap-md-1 active" data-bs-toggle="tab" data-bs-target="#chats" role="tab" type="button" aria-controls="chats" aria-selected="true"><img class="nav-icon" src="../app/images/icons/chat.svg" alt="chats"><span class="d-none d-sm-block">Сообщения</span></a></li>
+                <li class="nav-item"><a class="nav-link d-flex p-0 gap-0 gap-md-1" data-bs-toggle="tab" data-bs-target="#profile" role="tab" type="button" aria-controls="profile" aria-selected="false"><img class="nav-icon" src="../app/images/icons/person.svg" alt="profile"><span class="d-none d-sm-block">Профиль</span></a></li>
+              </ul>
+            </nav>
+            <div class="tab-content h-100 hide-scrollbar">
+              <section class="tab-pane pt-5 px-4" role="tabpanel" aria-labelledby="contacts-tab" id="contacts" tabindex="0">
+                <h1 class="section-title mb-4 mb-md-5">Контакты</h1>
+                <form class="mb-5" action="#">
+                  <lable class="visually-hidden" for="searching-contact">Поиск по контактам</lable>
+                  <input class="form-control-plaintext p-4 border-bottom" id="searching-contact" type="search" placeholder="Поиск по контактам">
+                </form>
+                <p class="text-muted mt-5">A</p>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_3.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Алексей Примадонин</div>
+                        <div class="contact-status">Онлайн</div>
+                      </div></a></li>
+                </ul>
+                <p class="text-muted mt-5">В</p>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_4.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Вениамин Редакторович</div>
+                        <div class="contact-status">Онлайн</div>
+                      </div></a></li>
+                </ul>
+                <p class="text-muted mt-5">Д</p>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_2.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Джедай Падаванов</div>
+                        <div class="contact-status">Был онлайн вчера</div>
+                      </div></a></li>
+                </ul>
+                <p class="text-muted mt-5">К</p>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_1.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Кодовёнок Хекслетович</div>
+                        <div class="contact-status">Был онлайн 3 часа назад</div>
+                      </div></a></li>
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_5.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Королева Верстальщина</div>
+                        <div class="contact-status">Была онлайн вчера</div>
+                      </div></a></li>
+                </ul>
+                <p class="text-muted mt-5">П</p>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact contact-card shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_6.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Питонист Джангович</div>
+                        <div class="contact-status">Был онлайн вчера</div>
+                      </div></a></li>
+                </ul>
+              </section>
+              <section class="tab-pane pt-5 px-4 active" role="tabpanel" aria-labelledby="chats-tab" id="chats" tabindex="0">
+                <h1 class="section-title mb-4 mb-md-5">Чаты</h1>
+                <form class="mb-5" action="#">
+                  <lable class="visually-hidden" for="searching-chat">Поиск по сообщениям</lable>
+                  <input class="form-control-plaintext p-4 border-bottom" id="searching-chat" type="search" placeholder="Поиск по сообщениям">
+                </form>
+                <ul class="list-group">
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_4.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Вениамин Редакторович</div>
+                        <div class="contact-time">11:45</div>
+                        <div class="contact-status">O_o</div>
+                      </div></a></li>
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_2.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Джедай Падаванов</div>
+                        <div class="contact-time">10:12</div>
+                        <div class="contact-status">Привет, скоро третий проект? Уже скоро надо будет выложить</div>
+                      </div></a></li>
+                  <li class="list-group-item p-0 border-0 mb-3"><a class="contact shadow-sm" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_3.jpg" alt="avatar">
+                      <div class="contact-title">
+                        <div class="contact-name">Алексей Примадонин</div>
+                        <div class="contact-time">08:53</div>
+                        <div class="contact-status">Тесты упали &gt;_&lt;</div>
+                      </div></a></li>
+                </ul>
+              </section>
+              <section class="tab-pane pt-5 px-4" role="tabpanel" aria-labelledby="profile-tab" id="profile" tabindex="0">
+                <h1 class="section-title mb-4 mb-md-5">Профиль</h1>
+                <form class="mb-5" action="#">
+                  <lable class="visually-hidden" for="searching-profile">Поиск по сообщениям</lable>
+                  <input class="form-control-plaintext p-4 border-bottom" id="searching-profile" type="search" placeholder="Поиск по сообщениям">
+                </form>
+                <div class="card align-items-center border-0 py-25 px-3"><img class="avatar avatar-md" src="../app/images/avatar_1.jpg" alt="profile avatar">
+                  <div class="card-body text-center">
+                    <div class="card-title fw-bold">Кодовёнок Хекслетович</div>
+                    <div class="card-text text-muted">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</div>
+                  </div>
+                </div>
+                <form action="#">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <div class="input-group">
+                        <div class="form-floating">
+                          <input class="form-control-plaintext form-control-sm" type="text" id="info-city" placeholder="Введите ваш город" value="Москва, Россия">
+                          <label for="info-city">Страна</label>
+                        </div>
+                        <div class="input-group-text bg-white border-0"><img class="profile-info-icon" src="../app/images/icons/web.svg" alt="web"></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="input-group">
+                        <div class="form-floating">
+                          <input class="form-control-plaintext form-control-sm" type="tel" id="info-tel" placeholder="Введите ваш телефон" value="+7 (499) 123-45-67">
+                          <label for="info-tel">Телефон</label>
+                        </div>
+                        <div class="input-group-text bg-white border-0"><img class="profile-info-icon" src="../app/images/icons/phone.svg" alt="tel"></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="input-group">
+                        <div class="form-floating">
+                          <input class="form-control-plaintext form-control-sm" type="email" id="info-email" placeholder="Введите ваш email" value="nikita.m@hexlet.io">
+                          <label for="info-email">Email</label>
+                        </div>
+                        <div class="input-group-text bg-white border-0"><img class="profile-info-icon" src="../app/images/icons/mail.svg" alt="mail"></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="input-group">
+                        <div class="form-floating">
+                          <input class="form-control-plaintext form-control-sm" type="text" id="info-twitter" placeholder="Укажите ваш аккаунт Twitter" value="@n_mikhaylov">
+                          <label for="info-twitter">Twitter</label>
+                        </div>
+                        <div class="input-group-text bg-white border-0"><img class="profile-info-icon" src="../app/images/icons/people.svg" alt="social"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </form>
+              </section>
+              <section class="tab-pane h-100 d-md-none" role="tabpanel" aria-labelledby="current-chat-tab" id="current-chat" tabindex="0">
+                <div class="sticky-top border-bottom bg-white"><a class="contact" href="#"><img class="avatar avatar-sm" src="../app/images/avatar_4.jpg" alt="avatar">
+                    <div class="contact-title">
+                      <div class="contact-name">Вениамин Редакторович</div>
+                      <div class="contact-status">Онлайн</div>
+                    </div></a></div>
+                <div class="h-100 pt-5 px-5 hide-scrollbar">
+                  <div class="row mb-3">
+                    <div class="col-auto">
+                      <div class="card rounded-4 border-0 p-0">
+                        <div class="card-body p-4 rounded-4 shadow-sm bg-light text-muted">
+                          <div class="card-title text-dark fw-bold mb-1">Вениамин Редакторович</div>
+                          <div class="card-text mb-2">Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?</div>
+                          <div class="card-text pt-1 border-top"><small>8 минут назад</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-auto">
+                      <div class="card rounded-4 border-0 p-0">
+                        <div class="card-body p-4 rounded-4 shadow-sm text-bg-primary">
+                          <div class="card-text mb-2">Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень</div>
+                          <div class="card-text pt-1 border-top"><small>5 минут назад</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-auto">
+                      <div class="card rounded-4 border-0 p-0">
+                        <div class="card-body p-4 rounded-4 shadow-sm bg-light text-muted">
+                          <div class="card-title text-dark fw-bold mb-1">Вениамин Редакторович</div>
+                          <div class="card-text mb-2">Лады</div>
+                          <div class="card-text pt-1 border-top"><small>5 минут назад</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-auto">
+                      <div class="card rounded-4 border-0 p-0">
+                        <div class="card-body p-4 rounded-4 shadow-sm text-bg-primary">
+                          <div class="card-text mb-2">А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие</div>
+                          <div class="card-text pt-1 border-top"><small>3 минуты назад</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-auto">
+                      <div class="card rounded-4 border-0 p-0">
+                        <div class="card-body p-4 rounded-4 shadow-sm bg-light text-muted">
+                          <div class="card-title text-dark fw-bold mb-1">Вениамин Редакторович</div>
+                          <div class="card-text mb-2">О_о</div>
+                          <div class="card-text pt-1 border-top"><small>Только что</small></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row sticky-bottom border-top bg-white">
+                  <form action="#">
+                    <div class="input-group flex-nowrap">
+                      <input class="form-control-plaintext ps-3" type="text" placeholder="Напишите сообщение..." aria-label="Напишите сообщение">
+                      <div class="input-group-text bg-white border-0 p-3">
+                        <button class="btn btn-primary rounded-circle p-0 send"><img src="../app/images/icons/cursor.svg" alt="send"></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="col col-md-5 col-lg-6 col-xl-7 col-xxl-8 h-100 p-0 d-none d-md-flex align-items-center justify-content-center">
+            <div class="card align-items-center border-0 py-25 px-3"><img class="avatar avatar-lg" src="../app/images/avatar_1.jpg" alt="profile avatar">
+              <div class="card-body text-center">
+                <div class="card-title fw-bold">Кодовёнок Хекслетович</div>
+                <div class="card-text text-muted">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
