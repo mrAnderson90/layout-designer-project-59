@@ -1,6 +1,11 @@
 .send-form {
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-right: 0.5rem;
   padding-left: 0;
+
+  @media (min-width: 768px) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
 }
