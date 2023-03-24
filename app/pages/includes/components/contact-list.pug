@@ -38,7 +38,7 @@
 
 each users, category in contacts
 	p.text-muted.mt-5 #{category}
-	ul.list-group
+	ul.list-group.gap-2
 		each user in users
-			li.list-group-item.p-0.border-0.mb-3
+			li.list-group-item.p-0.border-0
 				include contact.pug

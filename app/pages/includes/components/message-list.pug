@@ -25,9 +25,9 @@
 		}],
 	};
 
-ul.list-group
+ul.list-group.gap-2
 	each users, category in chats
 		each user in users
 			if user.time
-				li.list-group-item.p-0.border-0.mb-3
+				li.list-group-item.p-0.border-0
 					include message-preview.pug
