@@ -11162,6 +11162,7 @@ main {
 
 .section-title {
   font-size: calc(1.325rem + 0.9vw);
+  font-weight: 700;
 }
 @media (min-width: 1200px) {
   .section-title {
