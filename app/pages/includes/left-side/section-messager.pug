@@ -12,20 +12,18 @@ section.tab-pane.h-100.d-md-none(role='tabpanel' aria-labelledby='current-chat-t
 					.col-12.col-md-9.d-flex.align-items-end.gap-2
 						img(src=message.avatar, alt='avatar').d-none.d-xl-block.avatar.avatar-sm.shadow-sm
 						.card.rounded-4.border-0.p-0.mxw-558
-							.card-body.p-4.pb-c.rounded-4.shadow-sm.bg-light.text-muted
+							.card-body.p-4.rounded-4.shadow-sm.bg-light.text-muted
 								.card-title.text-dark.fw-bold.mb-1= message.name
 								.card-text.pb-2.m-0.border-bottom= message.text
-								.card-text.pt-1
-									small= message.timing
+								.card-text.pt-1.small= message.timing
 			else
 				.row.mb-3.justify-content-end
 					.col-12.col-md-9.d-flex.align-items-end.gap-2
 						img(src='./images/avatar_1.jpg', alt='avatar').d-none.d-xl-block.avatar.avatar-sm.shadow-sm
 						.card.rounded-4.border-0.p-0.mxw-558
-							.card-body.p-4.pb-c.rounded-4.shadow-sm.text-bg-primary
+							.card-body.p-4.rounded-4.shadow-sm.text-bg-primary
 								.card-text.pb-2.m-0.border-bottom= message.text
-								.card-text.pt-1
-									small= message.timing
+								.card-text.pt-1.small= message.timing
 	.row.m-0.mx-lg-5.sticky-bottom.border-top.bg-white
 		form(action='#').p-0
 			.input-group.flex-nowrap
