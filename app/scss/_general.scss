@@ -6,15 +6,13 @@ main {
 
 .section-title {
  max-height: 38px; 
+
   @include font-size(2rem);
   font-weight: 700;
 }
 
 .navbar-spacing {
-  padding-left: 21px;
-  padding-right: 2.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 23px;
+  padding: 1.5rem 2.5rem 23px 21px;
 
   @media (min-width: 768px) {
     padding-right: 2rem;
