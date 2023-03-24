@@ -1,14 +1,14 @@
 unless chat
 	section.tab-pane.pt-5.px-4(role='tabpanel' aria-labelledby='chats-tab' id='chats' tabindex='0')
 		h1.section-title.mb-4 Чаты
-		form(action='#').mb-5
+		form(action='#').mb-5.border-bottom
 			lable.visually-hidden(for='searching-chat') Поиск по сообщениям
-			input(id='searching-chat' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-bottom
+			input(id='searching-chat' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-0
 		include ../components/message-list.pug
 else
 	section.tab-pane.pt-5.px-4.active(role='tabpanel' aria-labelledby='chats-tab' id='chats' tabindex='0')
 		h1.section-title.mb-4 Чаты
 		form(action='#').mb-5
 			lable.visually-hidden(for='searching-chat') Поиск по сообщениям
-			input(id='searching-chat' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-bottom
+			input(id='searching-chat' type='search' placeholder='Поиск по сообщениям').form-control-plaintext.p-4.border-0
 		include ../components/message-list.pug
