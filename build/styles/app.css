@@ -11159,6 +11159,8 @@ textarea.form-control-lg {
 .send-form {
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-right: 24px;
+  padding-left: 0;
 }
 
 html,
