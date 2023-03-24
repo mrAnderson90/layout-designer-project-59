@@ -11163,13 +11163,14 @@ textarea.form-control-lg {
 .send-form {
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 0.5rem;
+  padding-right: 1rem;
   padding-left: 0;
 }
 @media (min-width: 768px) {
   .send-form {
     padding-top: 19px;
     padding-bottom: 19px;
+    padding-right: 0.5rem;
   }
 }
 
@@ -11209,6 +11210,10 @@ main {
 
 .ps-32 {
   padding-left: 2rem;
+}
+
+.pb-c {
+  padding-bottom: 23px !important;
 }
 
 .mxw-558 {
