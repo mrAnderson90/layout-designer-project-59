@@ -1,18 +1,19 @@
 $utilities: map-merge(
-	$utilities,
-	(
-		"gap": map-merge(
-			map-get($utilities, "gap"),
-			(values: 
-				(
-					0: 0,
-					1: $spacer * 0.5,
-					2: $spacer,
-					3: $spacer * 1.5,
-					4: $spacer * 2,
-					5: $spacer * 2.5,
-				)
-			),
-		),
-	)
+  $utilities,
+  (
+    "gap":
+      map-merge(
+        map-get($utilities, "gap"),
+        (
+          values: (
+            0: 0,
+            1: $spacer * 0.5,
+            2: $spacer,
+            3: $spacer * 1.5,
+            4: $spacer * 2,
+            5: $spacer * 2.5,
+          ),
+        )
+      ),
+  )
 );

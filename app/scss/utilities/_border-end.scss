@@ -1,9 +1,12 @@
 $utilities: map-merge(
   $utilities,
   (
-    "border-end": map-merge(
-      map-get($utilities, "border-end"),
-      (responsive: true),
-    )
-  ),
+    "border-end":
+      map-merge(
+        map-get($utilities, "border-end"),
+        (
+          responsive: true,
+        )
+      ),
+  )
 );

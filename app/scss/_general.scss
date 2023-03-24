@@ -1,11 +1,11 @@
 html,
 body,
 main {
-  height: 100%
+  height: 100%;
 }
 
 .section-title {
- max-height: 38px; 
+  max-height: 38px;
 
   @include font-size(2rem);
   font-weight: 700;

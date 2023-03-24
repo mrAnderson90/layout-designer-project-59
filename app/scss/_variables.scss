@@ -1,27 +1,27 @@
 // scss-docs-start theme-color-variables
-$primary: #4545A5;
-$secondary: #6C757D;
-$success: #28A745;
-$info: #17A2B8;
-$warning: #FFC107;
-$danger: #DC3545;
-$light: #FBFBFB;
-$dark: #343A40;
+$primary: #4545a5;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #fbfbfb;
+$dark: #343a40;
 $gray: #efefef;
 
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark,
-  "gray":       $gray
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+  "gray": $gray,
 );
 
 // scss-docs-end theme-colors-map
@@ -33,7 +33,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1600px
+  xxl: 1600px,
 );
 
 // container-max-widths
@@ -42,7 +42,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1540px
+  xxl: 1540px,
 );
 
 // Shadows
