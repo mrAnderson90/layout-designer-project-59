@@ -11084,7 +11084,9 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   column-gap: 1.5rem;
-  padding: 1rem;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  padding-left: 1rem;
   padding-right: 1.5rem;
   color: #212529;
   text-decoration: none;
@@ -11104,13 +11106,11 @@ textarea.form-control-lg {
 }
 .contact-time {
   grid-column: 7/8;
-  font-size: 0.8rem;
   color: #6c757d;
   opacity: 0.5;
 }
 .contact-status {
   grid-column: 1/-1;
-  font-size: 0.8rem;
   color: #6c757d;
   overflow: hidden;
   white-space: nowrap;

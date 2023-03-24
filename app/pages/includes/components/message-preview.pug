@@ -2,5 +2,7 @@ a(href='#').contact.shadow-sm
 	img(src=user.avatar alt='avatar').avatar.avatar-sm
 	.contact-title
 		.contact-name= user.name
-		.contact-time= user.time
-		.contact-status= user.message
+		.contact-time
+			small= user.time
+		.contact-status
+			small= user.message

@@ -2,4 +2,5 @@ a(href='#').contact.contact-card.shadow-sm
 	img(src=user.avatar alt='avatar').avatar.avatar-sm
 	.contact-title
 		.contact-name= user.name
-		.contact-status= user.status
+		.contact-status
+			small= user.status
