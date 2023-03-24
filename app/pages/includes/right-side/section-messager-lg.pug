@@ -28,10 +28,10 @@ section.tab-pane.h-100.w-100(role='tabpanel' aria-labelledby='current-chat-tab' 
 								.card-text.mb-2= message.text
 								.card-text.pt-1.border-top
 									small= message.timing
-	.row.mx-5.sticky-bottom.border-top.bg-white
+	.row.m-0.mx-lg-5.sticky-bottom.border-top.bg-white
 		form(action='#')
 			.input-group.flex-nowrap
-				input.form-control-plaintext.ps-3(type='text' placeholder='Напишите сообщение...' aria-label='Напишите сообщение')
+				input.form-control-plaintext.ps-3.border-0(type='text' placeholder='Напишите сообщение...' aria-label='Напишите сообщение')
 				.input-group-text.bg-white.border-0.p-3
 					button.btn.btn-primary.rounded-circle.p-0.send
 						img(src='./images/icons/cursor.svg', alt='send')
