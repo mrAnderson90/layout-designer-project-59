@@ -1,20 +1,20 @@
 nav.order-last.order-md-first.navbar.navbar-dark.navbar-expand.bg-primary.px-3.py-4
 	a.navbar-brand.p-0.d-flex(href='#')
-		img(src='../app/images/icons/logo.svg' alt='hexlet-logo').logo
+		img(src='./images/icons/logo.svg' alt='hexlet-logo').logo
 	ul.navbar-nav.small.w-100.justify-content-end.justify-content-md-evenly.gap-5.gap-md-0(role='tablist')
 		if chat
 			li.nav-item.d-md-none
 				a(data-bs-toggle='tab' data-bs-target='#current-chat' role='tab' type='button' aria-controls='current-chat' aria-selected='false').nav-link.d-flex.p-0.gap-0.gap-md-1
-					img(src='../app/images/icons/chat-left-text.svg' alt='messager').nav-icon
+					img(src='./images/icons/chat-left-text.svg' alt='messager').nav-icon
 		li.nav-item
 			a(data-bs-toggle='tab' data-bs-target='#contacts' role='tab' type='button' aria-controls='contacts' aria-selected='false').nav-link.d-flex.p-0.gap-0.gap-md-1
-				img(src='../app/images/icons/people.svg' alt='contacts').nav-icon
+				img(src='./images/icons/people.svg' alt='contacts').nav-icon
 				span.d-none.d-sm-block Контакты
 		li.nav-item
 			a(data-bs-toggle='tab' data-bs-target='#chats' role='tab' type='button' aria-controls='chats' aria-selected='true').nav-link.d-flex.p-0.gap-0.gap-md-1.active
-				img(src='../app/images/icons/chat.svg' alt='chats').nav-icon
+				img(src='./images/icons/chat.svg' alt='chats').nav-icon
 				span.d-none.d-sm-block Сообщения
 		li.nav-item
 			a(data-bs-toggle='tab' data-bs-target='#profile' role='tab' type='button' aria-controls='profile' aria-selected='false').nav-link.d-flex.p-0.gap-0.gap-md-1
-				img(src='../app/images/icons/person.svg' alt='profile').nav-icon
+				img(src='./images/icons/person.svg' alt='profile').nav-icon
 				span.d-none.d-sm-block Профиль

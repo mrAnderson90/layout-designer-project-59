@@ -2,21 +2,25 @@
 setup: htmlhint stylelint gulp sass pug svg-sprite concat bootstrap surge
 init:
 	npm init
-htmlhint:
+install-htmlhint:
 	npm install htmlhint --save-dev
-stylelint:
+install-stylelint:
 	npm install stylelint stylelint-config-standard stylelint-order stylelint-config-rational-order stylelint-scss stylelint-config-standard-scss --save-dev
-gulp:
+install-gulp:
 	npm i gulp
-sass:
+install-sass:
 	npm i sass gulp-sass --save-dev
-pug:
+install-pug:
 	npm i gulp-pug
-svg-sprite:
+install-svg-sprite:
 	npm i --save-dev gulp-svg-sprite
-concat:
+install-concat:
 	npm i --save-dev gulp-concat
-bootstrap:
+install-bootstrap:
 	npm install bootstrap@v5.2.3
-surge:
+install-surge:
 	npm i surge --save-dev
+sass:
+	npx sass ./app/sass/app.scss ./build/styles/app.css
+deploy:
+	npx surge ./build/
