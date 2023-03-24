@@ -11145,13 +11145,20 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 .send img {
+  width: 42px;
+  height: 42px;
   width: 1.5rem;
   height: 1.5rem;
   filter: invert(100%);
+}
+
+.send-form {
+  padding-top: 19px;
+  padding-bottom: 19px;
 }
 
 html,
