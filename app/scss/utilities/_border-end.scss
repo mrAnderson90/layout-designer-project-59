@@ -3,7 +3,7 @@ $utilities: map-merge(
   (
     "border-end":
     map-merge(
-    map-get($utilities, "border-end"),
+      map-get($utilities, "border-end"),
       (
         responsive: true,
       )
