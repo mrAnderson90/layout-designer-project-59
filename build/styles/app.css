@@ -11159,7 +11159,7 @@ textarea.form-control-lg {
 .send-form {
   padding-top: 19px;
   padding-bottom: 19px;
-  padding-right: 24px;
+  padding-right: 0.5rem;
   padding-left: 0;
 }
 
@@ -11170,6 +11170,7 @@ main {
 }
 
 .section-title {
+  max-height: 38px;
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 700;
 }
@@ -11194,6 +11195,10 @@ main {
 .py-25 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.ps-28 {
+  padding-left: 28px;
 }
 
 .mxw-558 {
