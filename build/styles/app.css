@@ -11170,6 +11170,13 @@ main {
   }
 }
 
+.navbar-spacing {
+  padding-left: 21px;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 23px;
+}
+
 .py-25 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
