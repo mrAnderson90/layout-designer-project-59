@@ -21,6 +21,6 @@ install-bootstrap:
 install-surge:
 	npm i surge --save-dev
 sass:
-	npx sass ./app/sass/app.scss ./build/styles/app.css
+	npx sass ./app/scss/app.scss ./build/styles/app.css
 deploy:
 	npx surge ./build/

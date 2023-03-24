@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 const buildSass = () => {
   console.log('Компиляция SASS');
-  return src('app/sass/app.scss')
+  return src('app/scss/app.scss')
   .pipe(sass())
   .pipe(dest('build/styles/'));
 }
