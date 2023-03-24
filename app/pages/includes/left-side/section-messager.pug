@@ -9,25 +9,27 @@ section.tab-pane.h-100.d-md-none(role='tabpanel' aria-labelledby='current-chat-t
 		each message in messages
 			if message.name
 				.row.mb-3
-					.col-auto
-						.card.rounded-4.border-0.p-0
+					.col-12.col-md-9.d-flex.align-items-end.gap-2
+						img(src=message.avatar, alt='avatar').d-none.d-xl-block.avatar.avatar-sm.shadow-sm
+						.card.rounded-4.border-0.p-0.mxw-558
 							.card-body.p-4.rounded-4.shadow-sm.bg-light.text-muted
 								.card-title.text-dark.fw-bold.mb-1= message.name
 								.card-text.mb-2= message.text
 								.card-text.pt-1.border-top
 									small= message.timing
 			else
-				.row.mb-3
-					.col-auto
-						.card.rounded-4.border-0.p-0
+				.row.mb-3.justify-content-end
+					.col-12.col-md-9.d-flex.align-items-end.gap-2
+						img(src='./images/avatar_1.jpg', alt='avatar').d-none.d-xl-block.avatar.avatar-sm.shadow-sm
+						.card.rounded-4.border-0.p-0.mxw-558
 							.card-body.p-4.rounded-4.shadow-sm.text-bg-primary
 								.card-text.mb-2= message.text
 								.card-text.pt-1.border-top
 									small= message.timing
-	.row.sticky-bottom.border-top.bg-white
-		form(action='#')
+	.row.m-0.mx-lg-5.sticky-bottom.border-top.bg-white
+		form(action='#').p-0
 			.input-group.flex-nowrap
-				input.form-control-plaintext.ps-3(type='text' placeholder='Напишите сообщение...' aria-label='Напишите сообщение')
-				.input-group-text.bg-white.border-0.p-3
+				input.form-control-plaintext.ps-4.border-0(type='text' placeholder='Напишите сообщение...' aria-label='Напишите сообщение')
+				.input-group-text.bg-white.border-0.send-form
 					button.btn.btn-primary.rounded-circle.p-0.send
 						img(src='./images/icons/cursor.svg', alt='send')
