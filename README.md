@@ -6,6 +6,7 @@
 ## _Follow the link to see deploy:_
 
 [Main page](https://futuristic-chat.surge.sh/)
+
 [Chat page](https://futuristic-chat.surge.sh/chat.html)
 
 ## The following technologies were used:
