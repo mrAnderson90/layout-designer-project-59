@@ -5,9 +5,9 @@
 
 ## _Follow the link to see deploy:_
 
-[Main page](https://futuristic-chat.surge.sh/)
+[Main page](https://unadvised-guitar.surge.sh/)
 
-[Chat page](https://futuristic-chat.surge.sh/chat.html)
+[Chat page](https://unadvised-guitar.surge.sh/chat.html)
 
 ## The following technologies were used:
 - HTML
